@@ -1,7 +1,7 @@
 # STM-seq-count
 Perl scripts for STM-NGS sequence tag counting.
 
-The current project has two perl scripts to be used as a pipeline to count for ocurrencies  of sets of transposon signature tags within next generation sequencing (NGS) reads. 
+The current project has two perl scripts to be used as a pipeline to count for occurrences  of sets of transposon signature tags within next generation sequencing (NGS) reads. 
 
 These scripts are written for STM experiments based on Sinorhizobium meliloti signature-tagged mini-Tn5 transposon library, but can be adapted for other cases.
 
