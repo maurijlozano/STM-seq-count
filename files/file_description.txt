@@ -1,0 +1,35 @@
+1.barcodes.txt
+This file contains a list of experimental conditions (from barcodes_all.txt) to be searched on the sequence data by count_STM script.
+Format: 
+IL-R1-K,CAGTAAAGGACGTGGTTTACGGGGC
+-------,----*********************
+Condition name, sequence barcode (Comma separated values). The sequence barcode consists of a 4nt (----) specific sequence tag, followed by a 21nt (***....) common sequence. 
+
+2. barcodes_all.txt
+All the condition barcodes used on our STM experiments. 
+
+3. input.txt
+A set of conditions corresponding to input samples. 
+
+4, 5. poolsh.txt and poolsk.txt
+These files contain a list of barcodes for the different STM mutant pools. Poolsh.txt correspond to H tags and poolsk.txt to K tags.
+Format:
+POOL1,GTGTTATATGAATGCCGCCACCCCC
+-----,----*********************
+Pool number, sequence barcode (Comma separated values). The sequence barcode consists of a 4nt (----) specific sequence tag, followed by a 21nt (***....) common sequence.
+
+6. firmash.txt and firmask.txt
+These files contain the list of STM signature tags for the different mutants on each. firmash.txt correspond to H tags and firmask.txt to K tags.
+Format:
+1,CCGTCGTTAAACGACGCTTCCTTT
+STM signature tag, sequence barcode (Comma separated values). The sequence barcode consists of a 24nt specific sequence tag.
+
+
+********************************
+PERL scripts
+
+count_STM.pl
+order_STM.pl
+
+The first script (count_STM.pl) works by loading (one-by-one) each NGS sequence read in the memory, and then looks for the sequence signatures corresponding to the test condition, the mutant pool, the KpnI or HindIII restriction sites, and the mutant-tag; generating as a result a text file containing on each line a condition-pool-mutant ID and the corresponding occurrence count. 
+The second script (order_STM.pl) searches for replicates along with input and output conditions and then generates two text files (corresponding to the input and output conditions) containing the count of all the replicates for each condition, set, or mutant-tag. 
