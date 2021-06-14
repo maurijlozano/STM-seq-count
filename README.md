@@ -4,6 +4,8 @@ Perl scripts for STM-NGS sequence tag counting.
 The current project has two perl scripts to be used as a pipeline to count for occurrences of sets of transposon signature tags within next generation sequencing (NGS) reads. 
 
 These scripts are written for STM experiments based on Sinorhizobium meliloti signature-tagged mini-Tn5 transposon library, but can be adapted for other cases.
+  
+![STM-seq-count](https://github.com/maurijlozano/STM-seq-count/blob/master/files/STM-pipeline.png)
 
 [Pobigaylo, N., Wetter, D., Szymczak, S., Schiller, U., Kurtz, S., Meyer, F., Nattkemper, T.W., Becker, A., 2006. Construction of a large signature-tagged mini-Tn5 transposon library and its application to mutagenesis of Sinorhizobium meliloti. Appl Env. Microbiol 72, 4329–4337].
 
